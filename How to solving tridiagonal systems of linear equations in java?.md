@@ -17,6 +17,7 @@ where the parameters are:
 - `b` - (input) Vector of `right hand side` elements. Length must be N.
 - `x` - (output) Solution vector. Length must be N.
 
+-----
 #### how to use this method in `intellij`?
 - first, we have to download the Parallel Java Library `Java Archive (JAR) file` called ` pj20150107.jar`, which contains the Tridiagonal class.
 
