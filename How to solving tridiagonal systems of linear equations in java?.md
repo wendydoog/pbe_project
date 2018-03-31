@@ -1,7 +1,8 @@
 # How to solving tridiagonal systems of linear equations in java?
+-----
 
 #### method:
------
+
 `solve`method in `Tridiagonal` class:
 ```
 static void	solve(double[] d, 
