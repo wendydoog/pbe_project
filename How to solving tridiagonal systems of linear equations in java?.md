@@ -31,7 +31,7 @@ where the parameters are:
 	import java.lang.Object;
 	import edu.rit.numeric.Tridiagonal;
 	```
-- Last, feel free to use it wherever you want!
+- Last, feel free to use it at wherever you want!
 -----
 #### where does the headline problem come from?
 This method has been used in my PBE project where I have to solve the tridiagonal systems of linear equations in ADI surface constructure.
