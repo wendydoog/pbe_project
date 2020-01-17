@@ -1,4 +1,4 @@
-# How to solving tridiagonal systems of linear equations in java?
+# How to solve tridiagonal systems of linear equations in java?
 -----
 
 #### method:
