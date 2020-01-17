@@ -1,4 +1,4 @@
-# Poisson Boltzmann Equation Project
+# Poisson-Boltzmann Equation Project
 
 `Description`: This project is kinda like a build-up procedure when I do my research of building new formulations and algorithms for solving Poisson-Boltzmann Equation, which is widely used for the study in biological and chemical systems at molecular level, etc. This the main work I am doing in my mathematical Ph.D. student journey.
 
