@@ -54,7 +54,7 @@ A popular approach to compute the average solvation energy:
 
 In this paper, the authors have carried out an extensive investigation of the ability of the Gaussian-based smooth dielectric function to mimic the conformational flexibility.
 
-1. `Data preprocessing`: To obtain a data set of reasonable size that can be managed in parallel with extensive MD simulations,  they used a set of protocols to screen out suitable proteins from the `Protein Data Bank` (PDB).
+ 1. `Data preprocessing`: To obtain a data set of reasonable size that can be managed in parallel with extensive MD simulations,  they used a set of protocols to screen out suitable proteins from the `Protein Data Bank` (PDB).
 
 - the resolution of the structures was limited to between 0.8 and 0.99 Å with at most 200 amino acids.
 - the structures should be monomeric.
@@ -69,12 +69,20 @@ Based on all the requirements, 74 proteins have been selected from the screening
 
  3. `MD Simulations`: Post energy minimization, the explicit water solvated systems were subjected to three independent MD simulations. More details of the setting of MD Simulation, please check the original paper.
  
-4.  `Ensemble Average Polar Solvation Energy via PB-Based Calculations vs Alchemical MD Methods`:
+ 4.  `Ensemble Average Polar Solvation Energy via PB-Based Calculations vs Alchemical MD Methods`:
 
   When keep structures `rigid`, the author compared the polar component of the solvation free energy of 19 proteins using TI-MD and using traditional 2-dielectric PB Model. And the result shows that PB calculations with Delphi (with protein internal dielectric = 1 and solvent dielectric = 80) can deliver (<img src="https://render.githubusercontent.com/render/math?math=\Delta G^{Sol}_{pol}">) that would otherwise require a much longer TI-MD runs. Therefore, by using Delphi to calculate Polar Solvation Energy for each “snapshot”, the ensemble polar solvation energy was calculated in a manageable time.
 
-  (paper1_image1.png)
-
+  
+  <p align="center">
+  <img src="https://github.com/wendydoog/pbe_project/blob/master/paper1_image1.png" width="512" height="512">
+  </p>
+  
+  
+  
+ 5.`Polar Solvation Energy of Energy-Minimized Structures`:
+ 
+ 
 
 
 
