@@ -15,9 +15,7 @@ Paper Anthors: `Arghya Chakravorty`, `Zhe Jia`, `Lin Li`, `Shan Zhao`, and `Emil
 ### Description:
 
 
-This paper mainly discussed the ways to reproducing  `the Ensemble Average Polar Solvation Energy`
-(<img src="https://render.githubusercontent.com/render/math?math=\Delta G^{Sol}_{pol}">) from `a Single Structure`, which can be 
-a `Energy Minimized Structure` in `Explicit Water`, `Implicit Solvent` and in `Vacuum` environments. Or it can be a `Crystal` structure.
+This paper mainly discussed the ways to reproducing  `the Ensemble Average Polar Solvation Energy` from `a Single Structure`, which can be a `Energy Minimized Structure` in `Explicit Water`, `Implicit Solvent` and in `Vacuum` environments. Or it can be a `Crystal` structure.
 
 *****
 
@@ -79,8 +77,34 @@ Based on all the requirements, 74 proteins have been selected from the screening
   </p>
   
   
+  5.`Polar Solvation Energy of Energy-Minimized Structures`:
   
- 5.`Polar Solvation Energy of Energy-Minimized Structures`:
+  In the rest of the manuscript, all the PB calculations performed using the traditional 2-dielectric method will carry a label “TRAD-x” and that for the Gaussian-based smooth dielectric method will carry a label “GAUSS-x”. The “x” in these
+labels indicate the protein internal dielectric constant. For instance, “TRAD-1” and “GAUSS-1” will identify as the corresponding methods with protein internal dielectric set at 1.
+
+ 6.`Comparisons`:
+ 
+ The Polar Solvation Energy of the protein structures obtained after minimization in three different environments in vacuo, Generalized Born Implicit Solvent (GBIS), and explicit water (TIP3P) were compared with the ensemble average polar solvation energy obtained by using MD simulations. For the sake of completeness, the crystal structure of the proteins was also subjected to this comparison.
+ 
+  <p align="center">
+  <img src="https://github.com/wendydoog/pbe_project/blob/master/paper1_image2.png" width="700" height="700">
+  </p>
+ 
+ Here is some results we get from above pictures:
+ 
+- A negative difference implies ⟨ΔG⟩ < ΔG(EM), depicting that the ensemble average is more negative than the polar
+solvation energy of the EM structure. In terms of magnitudes, the EM structure ΔG is smaller than the ⟨ΔG⟩ (underestimation). And vice versa.
+- Gaussian-based (GAUSS) and traditional dielectric (TRAD) models were used with the optimized crystal and EM structures to compare with ⟨ΔG⟩. For the former, values of 1, 2, 4, and 8 were used as internal reference dielectric constant. For the latter, only a single value (=1) was used because values larger than 1 resulted in highly underestimated ΔG with
+respect to the ensemble averaged ⟨ΔG⟩.
+- The traditional dielectric model (TRAD-1) has a very similar degree of agreement with the ⟨ΔG⟩ when paired with the optimized crystal structure (Figure 2a), and structures optimized in solvent(Figure 2c, d).
+- In Vacuo Energy-Minimized Structure Paired with Gaussian-Based Smooth Dielectric Distribution Can Best Reproduce the Ensemble.
+- The Gaussian-based dielectric model reveals a better agreement with the ensemble ⟨ΔG⟩.
+- Quantitatively, the mean relative unsigned error varies depending on the ε value used for a particular Gaussian based
+model, but there is always a case for all of the optimization environments where the mean relative unsigned error ≈5%.
+
+
+  
+  
  
  
 
