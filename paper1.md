@@ -6,7 +6,7 @@
 ----
 ### Paper Informations:
 
-Paper title: `Reproducing the Ensemble Average Polar Solvation Energy of a Protein from a Single Structure: Gaussian-Based Smooth Dielectric Function for Macromolecular Modeling` 
+Paper title: (Reproducing the Ensemble Average Polar Solvation Energy of a Protein from a Single Structure: Gaussian-Based Smooth Dielectric Function for Macromolecular Modeling)[http://szhao.people.ua.edu/uploads/9/0/8/4/90844682/jctc18.pdf]
 
 Paper Anthors: `Arghya Chakravorty`, `Zhe Jia`, `Lin Li`, `Shan Zhao`, and `Emil Alexov`.
 
