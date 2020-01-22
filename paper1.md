@@ -30,6 +30,7 @@ We've already learnt that calculating Solvation Energy by Implicit Solvent Model
 However, macromolecules are `not rigid objects`, and they undergo small or large conformational changes while being transferred from one medium to another. Disregarding this can cause severe errors in predictions of solvation free energies.
 
 A popular approach to compute the average solvation energy:  
+
 - First, carry out a molecular dynamics (MD)/Monte Carlo(MC) simulation;
 - then, obtain a representative ensemble of structures (snapshots); 
 - then, perform TI, FEP, or Bennett Acceptance Ratio (BAR)calculations on each of the snapshots (while keeping each of them rigid).
@@ -39,5 +40,12 @@ A popular approach to compute the average solvation energy:
 2. Any alternative way to reproducing the Ensemble Avarage?
 - Traditional two-dielectric PB Model.
 
-  Drawback:
-
+  `Drawbacks`: The traditional two-dielectric PB calculations cannot mimic these conformational changes within an ensemble because it uses homogeneous dielectric constant for macromolecule and water phase.
+  
+- Gaussian-based smooth dielectric Model.
+  
+  `Advantages`: This model delivers a smooth and heterogeneous dielectric distribution in the solvated system which accounts not only for the conformational flexibility of the solute but also the differential dielectric properties of the solvent phase in the proximity of solute.
+  
+3. 
+  
+  
