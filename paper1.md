@@ -70,9 +70,10 @@ Based on all the requirements, 74 proteins have been selected from the screening
  3. `MD Simulations`: Post energy minimization, the explicit water solvated systems were subjected to three independent MD simulations. More details of the setting of MD Simulation, please check the original paper.
  
 4.  `Ensemble Average Polar Solvation Energy via PB-Based Calculations vs Alchemical MD Methods`:
-When keep structures `rigid`, the author compared the polar component of the solvation free energy of 19 proteins using TI-MD and using traditional 2-dielectric PB Model. And the result shows that PB calculations with Delphi (with protein internal dielectric = 1 and solvent dielectric = 80) can deliver (<img src="https://render.githubusercontent.com/render/math?math=\Delta G^{Sol}_{pol}">) that would otherwise require a much longer TI-MD runs. Therefore, by using Delphi to calculate Polar Solvation Energy for each “snapshot”, the ensemble polar solvation energy was calculated in a manageable time.
 
+  When keep structures `rigid`, the author compared the polar component of the solvation free energy of 19 proteins using TI-MD and using traditional 2-dielectric PB Model. And the result shows that PB calculations with Delphi (with protein internal dielectric = 1 and solvent dielectric = 80) can deliver (<img src="https://render.githubusercontent.com/render/math?math=\Delta G^{Sol}_{pol}">) that would otherwise require a much longer TI-MD runs. Therefore, by using Delphi to calculate Polar Solvation Energy for each “snapshot”, the ensemble polar solvation energy was calculated in a manageable time.
 
+  (paper1_image1.png)
 
 
 
