@@ -92,15 +92,15 @@ labels indicate the protein internal dielectric constant. For instance, “TRAD-
  
  Here is some results we get from above pictures:
  
-- A negative difference implies ⟨ΔG⟩ < ΔG(EM), depicting that the ensemble average is more negative than the polar
-solvation energy of the EM structure. In terms of magnitudes, the EM structure ΔG is smaller than the ⟨ΔG⟩ (underestimation). And vice versa.
-- Gaussian-based (GAUSS) and traditional dielectric (TRAD) models were used with the optimized crystal and EM structures to compare with ⟨ΔG⟩. For the former, values of 1, 2, 4, and 8 were used as internal reference dielectric constant. For the latter, only a single value (=1) was used because values larger than 1 resulted in highly underestimated ΔG with
+- A `negative` difference implies ⟨ΔG⟩ < ΔG(EM), depicting that the ensemble average is more negative than the polar
+solvation energy of the EM structure. In terms of `magnitudes`, the EM structure ΔG is smaller than the ⟨ΔG⟩ (`underestimation`). And vice versa.
+- Gaussian-based (`GAUSS`) and traditional dielectric (`TRAD`) models were used with the optimized crystal and EM structures to compare with ⟨ΔG⟩. For the former, values of 1, 2, 4, and 8 were used as internal reference dielectric constant. For the latter, only a single value (=1) was used because values `larger than 1` resulted in highly `underestimated` ΔG with
 respect to the ensemble averaged ⟨ΔG⟩.
-- The traditional dielectric model (TRAD-1) has a very similar degree of agreement with the ⟨ΔG⟩ when paired with the optimized crystal structure (Figure 2a), and structures optimized in solvent(Figure 2c, d).
-- In Vacuo Energy-Minimized Structure Paired with Gaussian-Based Smooth Dielectric Distribution Can Best Reproduce the Ensemble.
+- The traditional dielectric model (`TRAD-1`) has a very similar degree of agreement with the ⟨ΔG⟩ when paired with the optimized `crystal` structure (Figure 2a), and structures optimized in `solvent`(Figure 2c, d).
+- `In Vacuo Energy-Minimized Structure Paired with Gaussian-Based Smooth Dielectric Distribution Can Best Reproduce the Ensemble`.
 - The Gaussian-based dielectric model reveals a better agreement with the ensemble ⟨ΔG⟩.
 - Quantitatively, the mean relative unsigned error varies depending on the ε value used for a particular Gaussian based
-model, but there is always a case for all of the optimization environments where the mean relative unsigned error ≈5%.
+model, but there is always a case for all of the optimization environments where the mean relative unsigned error `≈5%`.
 
 
   
