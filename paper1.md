@@ -114,7 +114,7 @@ differences.
 1. `trying to find what factors really have the influence`. 
 
  <p align="center">
-  <img src="https://github.com/wendydoog/pbe_project/blob/master/paper1_image3.png" width="700" height="700">
+  <img src="https://github.com/wendydoog/pbe_project/blob/master/paper1_image3.png" width="700" height="550">
   </p>
  
 - Differences in `Population of Salt Bridges (SBs)` Directly Affect Differences in `ensemble` using Traditional Method Across Different EM Structures of a Protein.
@@ -130,7 +130,9 @@ differences.
   
   2. `Seeking to find a quantitative association of the change in polar solvation energy ΔG and the number of SBs formed or lost upon solvation`.
   
-  figure 4
+  <p align="center">
+  <img src="https://github.com/wendydoog/pbe_project/blob/master/paper1_image4.png" width="700" height="300">
+  </p>
   
 - one can infer from the reasonably high r2 values (0.525 and 0.384 for GBIS and explicit solvent, respectively) that a linear relation is evident. This is a clear indicator of how the solvent can affect the number of SBs and subsequently alter the polar solvation free energy. Moreover, since the ordinate in the plots is the true difference (ΔΔG = ΔG(in vacuo) −
 ΔG(in solvent)), a greater loss of the SBs yields a more favorable solvation (ΔG is more negative).
@@ -139,7 +141,9 @@ differences.
 
 - Gaussian-Based Smooth Dielectric Model Reproduces Ensemble ⟨ΔG⟩ as It Can Mimic the Fluctuations of SBs.
 
-(figure 5)
+<p align="center">
+  <img src="https://github.com/wendydoog/pbe_project/blob/master/paper1_image5.png" width="700" height="300">
+  </p>
 
   *  The plot indicates that the error incurred by a dielectric distribution model `deteriorates` as more of the SBs present in the EM structure `break` during the MD. One can notice, from the linear trend in Figure 5a, that this is indeed the case with the traditional model. At the same time, from Figure 5b, the error of the GAUSS-2 method is not only smaller than that of the TRAD-1 method but is independent of the occupancy of the salt bridges.
   * the Gaussian-based dielectric model (GAUSS-2) is able to capture SB fluctuations resulting in smaller errors (than the
@@ -149,16 +153,21 @@ TRAD method), and the computed polar solvation energy has no dependence on the o
   
 - The ε_ref of Gaussian-Based Dielectric Distribution That Best Reproduces the Ensemble Average from a Structure Depends on the Strength of Salt Bridge Interactions in It.
 
-(figure 7)
+<p align="center">
+  <img src="https://github.com/wendydoog/pbe_project/blob/master/paper1_image7.png" width="700" height="600">
+  </p>
 
 * Figure 7 shows an example of a salt bridge that fluctuates between open and closed forms in MD simulations; it is
 closed/formed (O−N distance = 2.72 Å implying stronger interaction, Figure 7a), in the in vacuo-minimized structure but
 open/broken (O−N distance = 6.13 Å implying a weaker interaction, Figure 7b) in the GBIS-minimized structure of its
 host protein.
 
-(figure 8)
+<p align="center">
+  <img src="https://github.com/wendydoog/pbe_project/blob/master/paper1_image8.png" width="400" height="700">
+  </p>
 
-* 
+* there is a significant difference in how the Gaussianbased dielectric function treats closed versus open salt bridges.
+A schematic is shown in Figure 8.
 
   
   
