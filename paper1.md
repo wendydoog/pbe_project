@@ -101,6 +101,11 @@ respect to the ensemble averaged ⟨ΔG⟩.
 - The Gaussian-based dielectric model reveals a better agreement with the ensemble ⟨ΔG⟩.
 - Quantitatively, the mean relative unsigned error varies depending on the ε value used for a particular Gaussian based
 model, but there is always a case for all of the optimization environments where the mean relative unsigned error `≈5%`.
+- using the same value for GAUSS’s `ε_ref` and TRAD’s `ε_in` yields a more `negative` value for the former.
+
+***
+
+####  what structural factors that mostly influence the ability of the two dielectric models to reproduce ensemble from a single structure？
 
 
   
