@@ -107,6 +107,63 @@ model, but there is always a case for all of the optimization environments where
 
 ####  what structural factors that mostly influence the ability of the two dielectric models to reproduce ensemble from a single structure？
 
+In this paper, authors mainly focus on rendering a method that will incur the least error. So the GAUSS-2 in vacuo EM structure is the primary focus. They compared its outputs with that of the traditional method and elaborate on their
+differences.
+
+
+1. `trying to find what factors really have the influence`. 
+
+ <p align="center">
+  <img src="https://github.com/wendydoog/pbe_project/blob/master/paper1_image3.png" width="700" height="700">
+  </p>
+ 
+- Differences in `Population of Salt Bridges (SBs)` Directly Affect Differences in `ensemble` using Traditional Method Across Different EM Structures of a Protein.
+  * The comparison of the population of salt bridges after minimization shows that the in `vacuo` protein EM structures have a higher number of these than the EM structures from the other two environments(Figure 3a). 
+  * This has been further demonstrated by computing the relative number of SBs using the number in the corresponding EM structure from explicit water environment for normalization (Figure 3b).
+
+- examination on how other structural features such as `the structural backbone RMSD` and `intraprotein hydrogen bond network` vary after minimization in different environments.
+  * Energy minimization protocol is `not` expected to cause a significant change in a protein’s conformation, especially the backbone conformation, but it may result in different hydrogen positions. To verify, they calculated `the structural RMSD` of the backbone and `number of intraprotein hydrogen bonds` (hydrogen bonds within the atoms of a protein) after minimization, with respect to the corresponding crystal structure.
+  * The comparison for structural RMSD is shown in Figure 3c. They noticed that large backbone changes did `not` occur post minimization regardless of the environment. Essentially, the backbone atomic positions were preserved.
+  * In the same way, Figure 3d illustrates the comparison for the number of intraprotein hydrogen bonds. It is evident that all of the three environments yielded `similar` numbers after minimization.
+  * The above analysis indicates that EM in different environments results is very similar backbone structures and intraprotein hydrogen bonds and therefore cannot be the reason for the differences in the polar solvation energies.
+  
+  
+  2. `Seeking to find a quantitative association of the change in polar solvation energy ΔG and the number of SBs formed or lost upon solvation`.
+  
+  figure 4
+  
+- one can infer from the reasonably high r2 values (0.525 and 0.384 for GBIS and explicit solvent, respectively) that a linear relation is evident. This is a clear indicator of how the solvent can affect the number of SBs and subsequently alter the polar solvation free energy. Moreover, since the ordinate in the plots is the true difference (ΔΔG = ΔG(in vacuo) −
+ΔG(in solvent)), a greater loss of the SBs yields a more favorable solvation (ΔG is more negative).
+
+3. demonstrate how the breaking and forming of SBs in MD simulations is well mimicked by the Gaussian model but not the traditional one.
+
+- Gaussian-Based Smooth Dielectric Model Reproduces Ensemble ⟨ΔG⟩ as It Can Mimic the Fluctuations of SBs.
+
+(figure 5)
+
+  *  The plot indicates that the error incurred by a dielectric distribution model `deteriorates` as more of the SBs present in the EM structure `break` during the MD. One can notice, from the linear trend in Figure 5a, that this is indeed the case with the traditional model. At the same time, from Figure 5b, the error of the GAUSS-2 method is not only smaller than that of the TRAD-1 method but is independent of the occupancy of the salt bridges.
+  * the Gaussian-based dielectric model (GAUSS-2) is able to capture SB fluctuations resulting in smaller errors (than the
+TRAD method), and the computed polar solvation energy has no dependence on the occupancy of the SBs (r2 = 0.011).
+  
+  
+  
+- The ε_ref of Gaussian-Based Dielectric Distribution That Best Reproduces the Ensemble Average from a Structure Depends on the Strength of Salt Bridge Interactions in It.
+
+(figure 7)
+
+* Figure 7 shows an example of a salt bridge that fluctuates between open and closed forms in MD simulations; it is
+closed/formed (O−N distance = 2.72 Å implying stronger interaction, Figure 7a), in the in vacuo-minimized structure but
+open/broken (O−N distance = 6.13 Å implying a weaker interaction, Figure 7b) in the GBIS-minimized structure of its
+host protein.
+
+(figure 8)
+
+* 
+
+  
+  
+  
+
 
   
   
