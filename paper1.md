@@ -128,7 +128,7 @@ differences.
   * The above analysis indicates that EM in different environments results is very similar backbone structures and intraprotein hydrogen bonds and therefore cannot be the reason for the differences in the polar solvation energies.
   
   
-  2. `Seeking to find a quantitative association of the change in polar solvation energy ΔG and the number of SBs formed or lost upon solvation`.
+2. `Seeking to find a quantitative association of the change in polar solvation energy ΔG and the number of SBs formed or lost upon solvation`.
   
   <p align="center">
   <img src="https://github.com/wendydoog/pbe_project/blob/master/paper1_image4.png" width="700" height="300">
@@ -137,7 +137,7 @@ differences.
 - one can infer from the reasonably high r2 values (0.525 and 0.384 for GBIS and explicit solvent, respectively) that a linear relation is evident. This is a clear indicator of how the solvent can affect the number of SBs and subsequently alter the polar solvation free energy. Moreover, since the ordinate in the plots is the true difference (ΔΔG = ΔG(in vacuo) −
 ΔG(in solvent)), a greater loss of the SBs yields a more favorable solvation (ΔG is more negative).
 
-3. demonstrate how the breaking and forming of SBs in MD simulations is well mimicked by the Gaussian model but not the traditional one.
+3. `demonstrate how the breaking and forming of SBs in MD simulations is well mimicked by the Gaussian model but not the traditional one`.
 
 - Gaussian-Based Smooth Dielectric Model Reproduces Ensemble ⟨ΔG⟩ as It Can Mimic the Fluctuations of SBs.
 
@@ -147,27 +147,47 @@ differences.
 
   *  The plot indicates that the error incurred by a dielectric distribution model `deteriorates` as more of the SBs present in the EM structure `break` during the MD. One can notice, from the linear trend in Figure 5a, that this is indeed the case with the traditional model. At the same time, from Figure 5b, the error of the GAUSS-2 method is not only smaller than that of the TRAD-1 method but is independent of the occupancy of the salt bridges.
   * the Gaussian-based dielectric model (GAUSS-2) is able to capture SB fluctuations resulting in smaller errors (than the
-TRAD method), and the computed polar solvation energy has no dependence on the occupancy of the SBs (r2 = 0.011).
+TRAD method), and the computed polar solvation energy has `no` dependence on the occupancy of the SBs (r2 = 0.011).
   
   
   
-- The ε_ref of Gaussian-Based Dielectric Distribution That Best Reproduces the Ensemble Average from a Structure Depends on the Strength of Salt Bridge Interactions in It.
+- The `ε_ref` of Gaussian-Based Dielectric Distribution That Best Reproduces the Ensemble Average from a Structure Depends on the Strength of Salt Bridge Interactions in It.
 
 <p align="center">
   <img src="https://github.com/wendydoog/pbe_project/blob/master/paper1_image7.png" width="700" height="600">
   </p>
 
 * Figure 7 shows an example of a salt bridge that fluctuates between open and closed forms in MD simulations; it is
-closed/formed (O−N distance = 2.72 Å implying stronger interaction, Figure 7a), in the in vacuo-minimized structure but
-open/broken (O−N distance = 6.13 Å implying a weaker interaction, Figure 7b) in the GBIS-minimized structure of its
+closed/formed (O−N distance = 2.72 Å implying `stronger interaction`, Figure 7a), in the in vacuo-minimized structure but
+open/broken (O−N distance = 6.13 Å implying a `weaker interaction`, Figure 7b) in the GBIS-minimized structure of its
 host protein.
 
 <p align="center">
   <img src="https://github.com/wendydoog/pbe_project/blob/master/paper1_image8.png" width="400" height="700">
   </p>
 
-* there is a significant difference in how the Gaussianbased dielectric function treats closed versus open salt bridges.
+* there is a significant difference in how the Gaussian-based dielectric function treats closed versus open salt bridges.
 A schematic is shown in Figure 8.
+
+
+### Conclusion(Quote From the Paper):
+
+
+> The primary objective was to ascertain if the `Gaussian-based smooth dielectric distribution` (as implemented in DelPhi) for
+modeling the dielectric distribution can mimic the natural dynamics of a protein and therefore yield its `ensemble average
+polar solvation energy` using a `single` structure alone. The Gaussian-based model, in parallel with the `traditional 2-
+dielectric model`, was paired with structures minimized in different environments (in `vacuo`, `GBIS` and `explicit water`) and `crystal structure` of 74 proteins to study its ability to approximate the ensemble ⟨ΔG⟩. Our study shows that
+he `traditional dielectric model` is able to reproduce a protein’s ⟨ΔG⟩ only with its `crystal structure` or a `structure minimized in solvent`. However, for most of the proteins, one would have to decrease the dielectric internal dielectric (ε_in) to `below 1`, in order to achieve better approximations. This unreasonable modification can be circumvented by the use of Gaussian-based dielectric model. Not only does it yield a better agreement with the ensemble ⟨ΔG⟩ for physically valid internal dielectric values (known as ε_ref), its performance is appreciable regardless of the minimization environment. In fact, for most of the cases, `Gaussian-based dielectric model performs better than the traditional model`, even if subtly. Upon comparing the overall results, we show and therefore suggest that the use of Gaussian-based dielectric model with `ε_ref = 2`, paired with a protein’s in `vacuo-minimized structure`, is best suited for reproducing its ensemble average polar solvation energy.
+
+> A detailed analysis revealed the reasons for the aforementioned differences in performance and other solvation energy
+trends. We found that the `conformational states of SBs` (open/ closed) in a protein’s minimized structure play an important
+role in offering one dielectric model an advantage over the other in terms of reproducing its ensemble average polar
+solvation energy. This means that a dielectric model that best mimics the flexibility of the SB forming residues from their
+configuration in the EM structure is better at reproducing the ensemble average polar solvation free energy. The Gaussian-based dielectric model is shown to accomplish this and therefore is capable of generating ensemble average polar solvation energy of a protein from its in vacuo energy minimized structure. Our findings can henceforth serve as a starting point for developing time-inexpensive single structure MM/PBSA method.
+
+
+
+
 
   
   
